@@ -35,33 +35,21 @@ namespace Icarus
 
                     for (int i = 0; i < timesToMove; i++)
                     {
-
                         index++;
-
                         if (index == list.Count)
                         {
-
                             index = 0;
                             damage++;
-
                         }
-
                         list[index] -= damage;
-
                     }
-
-
                 }
-
                 input = Console.ReadLine().Split(' ');
-
             }
-
             foreach (var item in list)
             {
                 Console.Write("{0} ", item);
             }
-
         }
     }
 }
